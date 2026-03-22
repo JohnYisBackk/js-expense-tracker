@@ -1,4 +1,4 @@
-# 💸 Expense Tracker PRO
+# 💸 Expense Tracker 
 
 A modern and responsive expense tracking web application built with vanilla JavaScript.
 
