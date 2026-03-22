@@ -8,9 +8,8 @@ Track your income and expenses, monitor your balance in real time, and store you
 
 ## 🚀 Live Demo
 
-👉 [View Live Demo](#)
+👉 https://johnyisbackk.github.io/js-expense-tracker/
 
-> Replace `#` with your deployed project URL (GitHub Pages / Netlify / Vercel)
 
 ---
 
@@ -58,4 +57,10 @@ The application follows a simple state-driven architecture:
 
 ---
 
-## 📂 Project Structure
+## 👨‍💻 Author
+
+Built by **JohnY**
+
+- 💼 Aspiring Frontend Developer  
+- 🚀 Focused on JavaScript & modern web apps  
+
