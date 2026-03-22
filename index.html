@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="tracker-shell">
+      <header class="hero-banner">
+        <div class="hero-copy">
+          <p class="hero-tag">Finance Dashboard</p>
+          <h1 class="hero-title">Expense Tracker</h1>
+          <p class="hero-subtitle">
+            Track your incone and expenses in one clean, modern inferface.
+          </p>
+        </div>
+      </header>
+
+      <main class="tracker-layout">
+        <section class="entry-panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Add New Transaction</h2>
+            <p class="panel-text">
+              Add a title, amount and choose whether it is income or expense.
+            </p>
+          </div>
+
+          <form class="entry-form" id="entryForm">
+            <div class="field-group">
+              <label for="entryTitle" class="field-label"
+                >Transaction Title</label
+              >
+              <input
+                type="text"
+                id="entryTitle"
+                class="field-input"
+                placeholder="e.g. Salary, Groceries, Fuel"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="entryAmount" class="field-label">Amount</label>
+              <input
+                type="number"
+                id="entryAmount"
+                class="field-input"
+                placeholder="e.g. 250"
+              />
+            </div>
+
+            <div class="field-group">
+              <span class="field-label">Transaction Type</span>
+              <div class="type-switcher">
+                <label class="type-option">
+                  <input type="radio" name="entryType" value="income" checked />
+                  <span>Income</span>
+                </label>
+
+                <label class="type-option">
+                  <input type="radio" name="entryType" value="expense" />
+                  <span>Expense</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="action-btn" id="addEntryBtn">
+              Add Transaction
+            </button>
+          </form>
+        </section>
+
+        <section class="overview-panel">
+          <div class="stats-grid">
+            <article class="stat-card balance-card">
+              <p class="stat-label">Total Balance</p>
+              <h3 class="stat-value" id="balanceValue">$0.00</h3>
+            </article>
+
+            <article class="stat-card income-card">
+              <p class="stat-label">Total Income</p>
+              <h3 class="stat-value" id="incomeValue">$0.00</h3>
+            </article>
+
+            <article class="stat-card income-card">
+              <p class="stat-label">Total Expense</p>
+              <h3 class="stat-value" id="expenseValue">$0.00</h3>
+            </article>
+          </div>
+
+          <section class="history-panel">
+            <div class="panel-head history-head">
+              <div>
+                <h2 class="panel-title">Transaction History</h2>
+                <p class="panel-text">
+                  Your latest financial activity will appear here.
+                </p>
+              </div>
+            </div>
+
+            <div class="empty-state" id="emptyState">
+              <div class="empty-icon">+</div>
+              <h3 class="empty-title">No Transaction yet</h3>
+              <p class="empty-text">
+                Start by adding your first income or expense transaction.
+              </p>
+            </div>
+
+            <div class="ledger-list" id="ledgerList">
+              <!----  Transactions will apear here   ---->
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
